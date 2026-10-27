@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#6c4cf1" />
+  <meta name="description" content="A colorful, responsive calculator built with HTML, CSS, and JavaScript." />
+  <title>ColorPop Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <main class="page">
+    <header class="page-header">
+      <div class="brand-mark" aria-hidden="true">✳</div>
+      <div>
+        <p class="eyebrow">CODEALPHA • FRONTEND PROJECT</p>
+        <h1>ColorPop <span>Calculator</span></h1>
+      </div>
+    </header>
+
+    <section class="calculator" aria-label="Calculator">
+      <div class="calculator-top">
+        <span class="status-dot"></span>
+        <span>READY TO CALCULATE</span>
+        <span class="top-sparkle" aria-hidden="true">✦</span>
+      </div>
+
+      <div class="display" aria-live="polite" aria-atomic="true">
+        <div id="expression" class="expression" aria-label="Expression">&nbsp;</div>
+        <div id="display" class="display-value" aria-label="Current value">0</div>
+        <div id="message" class="message" role="status">Use the keypad or your keyboard</div>
+      </div>
+
+      <div class="keypad" id="keypad">
+        <button class="key key-utility" data-action="clear" aria-label="Clear all">AC</button>
+        <button class="key key-utility" data-action="delete" aria-label="Delete last digit">⌫</button>
+        <button class="key key-utility" data-action="percent" aria-label="Percent">%</button>
+        <button class="key key-operator" data-operator="÷" aria-label="Divide">÷</button>
+
+        <button class="key" data-number="7">7</button>
+        <button class="key" data-number="8">8</button>
+        <button class="key" data-number="9">9</button>
+        <button class="key key-operator" data-operator="×" aria-label="Multiply">×</button>
+
+        <button class="key" data-number="4">4</button>
+        <button class="key" data-number="5">5</button>
+        <button class="key" data-number="6">6</button>
+        <button class="key key-operator" data-operator="−" aria-label="Subtract">−</button>
+
+        <button class="key" data-number="1">1</button>
+        <button class="key" data-number="2">2</button>
+        <button class="key" data-number="3">3</button>
+        <button class="key key-operator" data-operator="+" aria-label="Add">+</button>
+
+        <button class="key key-utility" data-action="sign" aria-label="Change sign">±</button>
+        <button class="key" data-number="0">0</button>
+        <button class="key" data-action="decimal" aria-label="Decimal point">.</button>
+        <button class="key key-equals" data-action="equals" aria-label="Calculate result">=</button>
+      </div>
+
+      <footer class="calculator-footer">
+        <span>⌨ Keyboard supported</span>
+        <span class="footer-heart">Made with color <span aria-hidden="true">♥</span></span>
+      </footer>
+    </section>
+
+    <p class="page-note">A little color for your calculations. <span>✦</span></p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
